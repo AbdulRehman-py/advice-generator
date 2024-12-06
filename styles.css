@@ -123,3 +123,22 @@
         }
     }
 }
+
+
+@layer animation {
+
+    @keyframes rotate-360 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+  
+    /* Apply the animation when the .rotate-360 class is added */
+    .rotate-360 {
+        animation: rotate-360 0.5s ease-in-out;
+    }
+
+}
